@@ -27,7 +27,7 @@ endif()
 add_subdirectory(external/pmp-library)
 
 # configuration
-set(some_path_define_in_cmake_lists "${PROJECT_SOURCE_DIR}")
+set(model_path "${PROJECT_SOURCE_DIR}/model/")
 configure_file(config/config.h.in "${PROJECT_SOURCE_DIR}/include/${PROJECT_NAME}/config.h")
 
 # find_package(spdlog CONFIG REQUIRED)
