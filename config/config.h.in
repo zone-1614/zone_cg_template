@@ -1,2 +1,4 @@
 #pragma once
-#define model_path "@model_path@"
+#include <string>
+#include <filesystem>
+static std::string current_path = std::filesystem::current_path().string();
